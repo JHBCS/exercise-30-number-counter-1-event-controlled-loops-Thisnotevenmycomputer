@@ -15,7 +15,10 @@
  	
  	
  	// *********** declare variables **********
- 	int input;
+ 	int grade=0;
+	double sum=0;
+	double average=0;
+	int count=0;
 
 
 	// ********* code needed for keyboard input ******
@@ -23,8 +26,15 @@
 
    	//sample code for loop priming
 	System.out.print("Enter a number (0 to stop): ");
-  	input = in.nextInt();
-  
+  	grade = in.nextInt();
+  while (grade!=0){
+	count++;
+	sum = sum+grade;
+	System.out.println("Enter a number (o to stop): ");
+	grade = in.nextInt();
+  }
+  average =sum/count;
+  System.out.println(average + " Is the average.");
 	//add loop here
 
 
